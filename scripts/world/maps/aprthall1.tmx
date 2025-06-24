@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="32" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="33">
+ <editorsettings>
+  <export target="aprthall1.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+ </properties>
+ <tileset firstgid="1" source="../tilesets/HometownExterior.tsx"/>
+ <tileset firstgid="169" source="../../../libraries/hometown_library-main/scripts/world/tilesets/school.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="32" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,214,215,215,215,215,215,215,215,215,215,215,215,215,215,215,215,215,215,215,215,215,215,215,170,170,215,216,0,0,
+0,0,0,214,86,215,215,86,215,215,86,215,215,215,215,215,215,215,215,110,215,215,86,215,215,86,170,170,86,216,0,0,
+0,0,0,223,86,224,224,86,224,224,86,224,224,224,224,224,224,224,224,110,224,224,86,224,224,86,224,224,86,225,0,0,
+0,0,0,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,0,0,
+0,0,0,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,0,0,
+0,0,0,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,169,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,169,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,169,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="2" name="collision">
+  <object id="1" x="810" y="120" width="400" height="120"/>
+  <object id="2" x="1200" y="240" width="40" height="120"/>
+  <object id="4" x="760" y="120" width="40" height="40"/>
+  <object id="6" x="110" y="120" width="640" height="120"/>
+  <object id="12" x="80" y="240" width="40" height="120"/>
+  <object id="13" x="120" y="360" width="510" height="120"/>
+  <object id="14" x="690" y="360" width="520" height="120"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" id="3" name="paths"/>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="15" name="transition" x="760" y="200" width="40" height="40">
+   <properties>
+    <property name="facing" value="right"/>
+    <property name="map" value="stairway"/>
+    <property name="marker" value="stairenter"/>
+   </properties>
+  </object>
+  <object id="20" name="interactable" x="880" y="200" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's locked.)"/>
+   </properties>
+  </object>
+  <object id="21" name="interactable" x="1000" y="200" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's locked.)"/>
+   </properties>
+  </object>
+  <object id="22" name="interactable" x="1120" y="200" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's locked.)"/>
+   </properties>
+  </object>
+  <object id="23" name="interactable" x="160" y="200" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's locked.)"/>
+   </properties>
+  </object>
+  <object id="24" name="interactable" x="280" y="200" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's locked.)"/>
+   </properties>
+  </object>
+  <object id="25" name="interactable" x="400" y="200" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's locked.)"/>
+   </properties>
+  </object>
+  <object id="26" name="cameratarget" x="120" y="240" width="1080" height="200">
+   <properties>
+    <property name="lockx" type="bool" value="false"/>
+    <property name="target_marker" value="cameratarget"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00c000" id="5" name="controllers"/>
+ <objectgroup color="#7f00ff" id="6" name="markers">
+  <object id="29" name="camlock" x="660" y="300">
+   <point/>
+  </object>
+  <object id="30" name="spawn" x="660" y="360">
+   <point/>
+  </object>
+  <object id="32" name="stairexit" x="780" y="270">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ff00" id="7" name="battleareas"/>
+</map>

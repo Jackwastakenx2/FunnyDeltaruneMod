@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="69">
+ <editorsettings>
+  <export target="room1.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="false"/>
+  <property name="name" value="Test Map - Room 1"/>
+ </properties>
+ <tileset firstgid="1" source="../tilesets/castle.tsx"/>
+ <tileset firstgid="41" source="../tilesets/HometownExterior.tsx"/>
+ <tileset firstgid="209" source="../../../libraries/hometown_library-main/scripts/world/tilesets/hometownobjects.tsx"/>
+ <layer id="1" name="tiles" width="16" height="12">
+  <data encoding="csv">
+23,23,21,23,23,23,23,23,23,23,23,23,23,23,23,23,
+23,23,21,23,23,23,23,23,23,23,23,23,23,23,23,23,
+23,23,21,23,23,23,23,23,23,23,23,23,23,13,23,23,
+17,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,
+10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12,
+10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12,
+10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12,
+10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12,
+14,15,15,15,15,15,15,15,15,15,15,11,11,11,11,12,
+0,0,0,0,0,0,0,0,0,0,0,10,11,44,11,12,
+0,0,0,0,0,0,0,0,0,0,0,10,11,54,11,12,
+0,0,0,0,0,0,0,0,0,0,0,10,11,44,11,12
+</data>
+ </layer>
+ <layer id="2" name="decal" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,214,0,0,0,0,0,0,0,41,42,43,0,
+0,0,0,0,0,0,0,0,0,0,0,64,54,0,54,64,
+0,0,0,0,0,0,0,0,0,0,0,59,54,0,54,61,
+0,0,0,0,0,0,0,0,0,0,0,59,54,0,54,61
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="3" name="collision" opacity="0.5">
+  <object id="41" x="-40" y="120" width="40" height="240"/>
+  <object id="55" x="0" y="360" width="440" height="120"/>
+  <object id="56" x="0" y="80" width="640" height="40"/>
+  <object id="57" x="640" y="120" width="40" height="360"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <properties>
+   <property name="cutscene" value="testing.claws"/>
+  </properties>
+  <object id="43" name="savepoint" x="440" y="320" width="40" height="40">
+   <properties>
+    <property name="marker" value="save"/>
+    <property name="text1" value="* (In this simple testing room, Nothing is expected of you)"/>
+    <property name="text2" value="* (You are filled with the power of amateurism)"/>
+   </properties>
+  </object>
+  <object id="46" name="enemy" x="380" y="140" width="40" height="40">
+   <properties>
+    <property name="actor" value="dummy"/>
+    <property name="encounter" value="dummy"/>
+   </properties>
+  </object>
+  <object id="51" name="warpdoor" x="260" y="130">
+   <properties>
+    <property name="map1" value="room1"/>
+    <property name="map2" value="hometown/school/school_door"/>
+    <property name="marker1" value=""/>
+    <property name="marker2" value="door"/>
+    <property name="name1" value="Testing"/>
+    <property name="name2" value="Hometown"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="transition" x="440" y="440" width="200" height="40">
+   <properties>
+    <property name="map" value="rowsofroads"/>
+    <property name="marker" value="roads_enter"/>
+   </properties>
+  </object>
+  <object id="59" name="interactable" x="520" y="80" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="testing.claws"/>
+   </properties>
+  </object>
+  <object id="61" name="climbentry" x="80" y="80" width="40" height="40">
+   <properties>
+    <property name="area" type="object" value="62"/>
+   </properties>
+  </object>
+  <object id="62" name="climbarea" x="80" y="0" width="40" height="80"/>
+  <object id="63" x="-65.5" y="619.5" width="83" height="19">
+   <text wrap="1">Hello World</text>
+  </object>
+  <object id="64" name="interactable" x="160" y="320" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="intro.testing"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="66" name="npc" x="0" y="120" width="40" height="40">
+   <properties>
+    <property name="actor" value="growlie"/>
+    <property name="cond" value="not (Game:hasPartyMember(&quot;growlie&quot;))"/>
+   </properties>
+  </object>
+  <object id="67" name="interactable" x="0" y="120" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="testing.growliechange"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="20" name="spawn" x="400" y="240">
+   <point/>
+  </object>
+  <object id="60" name="save" x="540" y="350">
+   <point/>
+  </object>
+  <object id="50" name="door" x="260" y="170">
+   <point/>
+  </object>
+  <object id="68" name="growliehere" x="20" y="140">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff0000" id="6" name="paths"/>
+ <objectgroup color="#00c000" id="7" name="controllers"/>
+ <objectgroup color="#00ff00" id="8" name="battleareas"/>
+</map>
