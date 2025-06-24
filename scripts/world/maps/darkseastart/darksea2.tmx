@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="16" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="21">
+ <editorsettings>
+  <export target="darksea2.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../../tilesets/darksea.tsx"/>
+ <layer id="9" name="Tile Layer 3" width="16" height="16">
+  <data encoding="csv">
+13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,
+13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,
+13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,
+13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,
+13,13,13,13,13,13,13,13,13,13,22,13,13,22,13,13,
+13,13,13,13,13,13,13,13,13,13,22,13,13,22,13,13,
+13,13,13,13,13,13,13,13,13,13,22,13,13,22,13,13,
+13,13,13,13,13,13,13,13,13,13,22,13,13,22,13,13,
+13,13,13,13,13,13,13,13,13,13,22,13,13,22,13,13,
+13,13,13,13,13,13,13,13,13,13,22,13,13,22,13,13,
+13,13,13,13,13,13,13,13,13,13,22,13,13,22,13,13,
+13,13,13,13,13,13,13,13,13,13,22,13,13,22,22,22,
+13,13,13,13,13,13,13,13,13,22,22,22,13,22,22,0,
+13,13,13,13,13,13,13,13,13,22,22,13,13,22,22,0,
+22,22,22,22,22,22,22,22,22,22,22,13,13,22,22,0,
+22,22,22,22,22,22,22,22,22,22,22,13,13,22,22,0
+</data>
+ </layer>
+ <layer id="8" name="Tile Layer 2" width="16" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,1,2,2,2,2,2,2,2,3,0,
+0,0,0,0,0,0,9,10,10,10,10,10,10,10,11,0,
+0,0,0,0,0,0,9,10,10,10,10,10,10,10,11,0,
+0,0,0,0,0,0,9,10,10,10,10,10,10,10,11,0,
+0,0,0,0,0,0,5,10,10,11,17,18,19,5,7,0,
+0,0,0,0,0,0,5,10,10,11,21,22,23,5,7,0,
+0,0,0,0,0,0,5,10,10,11,21,22,23,5,7,0,
+0,0,0,0,0,0,5,10,10,11,21,22,23,5,6,2,
+2,2,2,2,2,2,10,10,10,11,21,22,23,5,6,10,
+10,10,10,10,10,10,10,10,10,11,21,22,23,17,18,18,
+10,10,10,10,10,10,10,10,10,11,21,22,23,21,22,22,
+10,10,10,10,10,10,10,10,10,11,21,22,23,21,1,2,
+18,18,18,18,18,18,18,18,18,19,21,22,23,21,17,18,
+22,22,22,22,22,22,22,22,22,23,21,22,23,21,21,22,
+0,0,0,0,0,0,0,0,0,23,21,22,23,21,21,22,
+0,0,0,0,0,0,0,0,0,23,21,22,23,21,21,22
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="2" name="collision">
+  <object id="5" x="0" y="480" width="400" height="40"/>
+  <object id="6" x="0" y="0" width="240" height="320"/>
+  <object id="10" x="400" y="160" width="120" height="320"/>
+  <object id="11" x="520" y="360" width="120" height="40"/>
+  <object id="18" x="240" y="-40" width="360" height="40"/>
+  <object id="19" x="600" y="0" width="40" height="280"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" id="3" name="paths"/>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="1" name="transition" x="-40" y="320" width="40" height="160">
+   <properties>
+    <property name="map" value="darkseastart/peninsula"/>
+    <property name="marker" value="enterpeninsula"/>
+   </properties>
+  </object>
+  <object id="17" name="transition" x="640" y="280" width="40" height="80">
+   <properties>
+    <property name="map" value="darkseastart/slideitude"/>
+    <property name="marker" value="in"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00c000" id="5" name="controllers"/>
+ <objectgroup color="#7f00ff" id="6" name="markers">
+  <object id="2" name="in" x="40" y="400">
+   <point/>
+  </object>
+  <object id="16" name="out" x="600" y="320">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ff00" id="7" name="battleareas"/>
+</map>
