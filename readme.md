@@ -1,4 +1,5 @@
-![funnydeltmodpng](icon.png)  
+![icon](icon.png)  
+![time](https://hackatime-badge.hackclub.com/U092D19JANT/barking_sea)  
 So.  
 This is a deltarune self-insert mod using [Kristal]( https://github.com/KristalTeam/Kristal).  
 ...Im Cringe, yet I am free.  
