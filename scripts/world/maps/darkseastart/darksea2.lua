@@ -244,7 +244,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["map"] = "darkseastart/slideitude",
+            ["map"] = "darkseastart/sliditude",
             ["marker"] = "in"
           }
         }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="15">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="18">
  <editorsettings>
   <export target="sliditude.lua" format="lua"/>
  </editorsettings>
@@ -123,10 +123,19 @@
     <property name="marker" value="out"/>
    </properties>
   </object>
+  <object id="15" name="transition" x="640" y="1040" width="40" height="80">
+   <properties>
+    <property name="map" value="darkseastart/cliffsfight"/>
+    <property name="marker" value="fightin"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#00c000" id="5" name="controllers"/>
  <objectgroup color="#7f00ff" id="6" name="markers">
   <object id="14" name="in" x="40" y="120">
+   <point/>
+  </object>
+  <object id="16" name="out" x="600" y="1080">
    <point/>
   </object>
  </objectgroup>

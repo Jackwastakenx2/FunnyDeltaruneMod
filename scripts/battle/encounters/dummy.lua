@@ -15,7 +15,26 @@ function Dummy:init()
     self:addEnemy("dummy")
 
     --- Uncomment this line to add another!
-    --self:addEnemy("dummy")
+    self:addEnemy("dummy")
+
+    --- holy crap lois
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
+    -- self:addEnemy("dummy")
 end
 
 return Dummy

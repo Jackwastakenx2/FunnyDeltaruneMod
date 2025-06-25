@@ -12,7 +12,7 @@ function Dummy:init()
     self.max_health = 450
     self.health = 450
     -- Enemy attack (determines bullet damage)
-    self.attack = 128
+    self.attack = 4
     -- Enemy defense (usually 0)
     self.defense = 0
     -- Enemy reward
@@ -23,8 +23,9 @@ function Dummy:init()
 
     -- List of possible wave ids, randomly picked each turn
     self.waves = {
-        "basic",
+        "bottles",
         "aiming",
+        "basic",
         "movingarena"
     }
 
