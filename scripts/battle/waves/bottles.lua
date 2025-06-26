@@ -1,7 +1,7 @@
 local ExampleWave, super = Class(Wave)
 function ExampleWave:init()
     super.init(self)
-
+    
     -- The duration of our wave, in seconds. (Defaults to `5`)
     self.time = 10
 end

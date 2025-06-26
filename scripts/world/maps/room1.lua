@@ -214,7 +214,7 @@ return {
           visible = true,
           properties = {
             ["actor"] = "dummy",
-            ["encounter"] = "dummy"
+            ["encounter"] = "chstart"
           }
         },
         {

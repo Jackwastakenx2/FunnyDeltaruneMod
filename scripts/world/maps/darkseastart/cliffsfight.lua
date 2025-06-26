@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 11,
+  nextobjectid = 10,
   properties = {},
   tilesets = {
     {
@@ -233,7 +233,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["map"] = "darkseastart/slideitude",
+            ["map"] = "darkseastart/sliditude",
             ["marker"] = "out"
           }
         }
@@ -274,19 +274,6 @@ return {
           type = "",
           shape = "point",
           x = 40,
-          y = 240,
-          width = 0,
-          height = 0,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 10,
-          name = "fightout",
-          type = "",
-          shape = "point",
-          x = 600,
           y = 240,
           width = 0,
           height = 0,

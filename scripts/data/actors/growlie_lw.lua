@@ -21,7 +21,7 @@ function actor:init()
     self.default = "walk"
 
     -- Sound to play when this actor speaks (optional)
-    self.voice = nil
+    self.voice = "txtgrw"
     -- Path to this actor's portrait for dialogue (optional)
     self.portrait_path = nil
     -- Offset position for this actor's portrait (optional)
