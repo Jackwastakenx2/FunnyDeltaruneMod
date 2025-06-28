@@ -4,11 +4,12 @@ function actor:init()
     super.init(self)
      -- Display name (optional)
     self.name = "Growlie"
-
     -- Width and height for this actor, used to determine its center
     self.width = 25
     self.height = 45
-
+    self.animations = {
+        ["battle/idle"] = {"battle/idle", 0.2, true},
+    }
     -- A table that defines where the Soul should be placed on this actor if they are a player.
     -- First value is x, second value is y.
     self.soul_offset = {10, 24}

@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 69,
+  nextobjectid = 71,
   properties = {
     ["light"] = false,
     ["name"] = "Test Map - Room 1"
@@ -357,6 +357,19 @@ return {
           properties = {
             ["cutscene"] = "testing.growliechange"
           }
+        },
+        {
+          id = 70,
+          name = "spill",
+          type = "",
+          shape = "rectangle",
+          x = 520,
+          y = 360,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
         }
       }
     },

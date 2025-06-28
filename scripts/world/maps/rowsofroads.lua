@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 11,
-  nextobjectid = 32,
+  nextobjectid = 36,
   properties = {},
   tilesets = {
     {
@@ -23,6 +23,12 @@ return {
       name = "test_battleborder",
       firstgid = 169,
       filename = "../tilesets/test_battleborder.tsx"
+    },
+    {
+      name = "hometownobjects",
+      firstgid = 184,
+      filename = "../../../libraries/hometown_library-main/scripts/world/tilesets/hometownobjects.tsx",
+      exportfilename = "../../../libraries/hometown_library-main/scripts/world/tilesets/hometownobjects.lua"
     }
   },
   layers = {
@@ -281,6 +287,33 @@ return {
           width = 160,
           height = 200,
           rotation = 18.5298,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 33,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 160,
+          y = 160,
+          width = 62,
+          height = 72,
+          rotation = 0,
+          gid = 250,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 35,
+          name = "spill",
+          type = "",
+          shape = "point",
+          x = 191.5,
+          y = 138.5,
+          width = 0,
+          height = 0,
+          rotation = 0,
           visible = true,
           properties = {}
         }

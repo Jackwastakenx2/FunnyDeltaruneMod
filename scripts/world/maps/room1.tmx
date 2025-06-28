@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="69">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="71">
  <editorsettings>
   <export target="room1.lua" format="lua"/>
  </editorsettings>
@@ -113,6 +113,7 @@
     <property name="cutscene" value="testing.growliechange"/>
    </properties>
   </object>
+  <object id="70" name="spill" x="520" y="360" width="40" height="40"/>
  </objectgroup>
  <objectgroup color="#7f00ff" id="5" name="markers">
   <object id="20" name="spawn" x="400" y="240">

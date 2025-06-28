@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 30,
-  nextobjectid = 70,
+  nextobjectid = 77,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -945,7 +945,7 @@ return {
           name = "script",
           type = "",
           shape = "rectangle",
-          x = 2920,
+          x = 2960,
           y = 240,
           width = 40,
           height = 200,
@@ -954,6 +954,19 @@ return {
           properties = {
             ["cutscene"] = "intro.apartments"
           }
+        },
+        {
+          id = 71,
+          name = "spill",
+          type = "",
+          shape = "point",
+          x = 3428,
+          y = 60,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -1056,6 +1069,45 @@ return {
           shape = "point",
           x = 1660,
           y = 340,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 73,
+          name = "windowcam",
+          type = "",
+          shape = "point",
+          x = 3360,
+          y = 240,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 75,
+          name = "susie",
+          type = "",
+          shape = "point",
+          x = 2980,
+          y = 300,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 76,
+          name = "kris",
+          type = "",
+          shape = "point",
+          x = 2980,
+          y = 380,
           width = 0,
           height = 0,
           rotation = 0,

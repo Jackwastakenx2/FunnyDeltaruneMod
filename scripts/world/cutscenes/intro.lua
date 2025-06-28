@@ -80,6 +80,20 @@ return {
     end,
     ---@param cutscene WorldCutscene
     apartments = function (cutscene)
+        cutscene:detachCamera()
+        cutscene:detachFollowers()
+        local kris = cutscene:getCharacter("kris_lw")
+        local susie = cutscene:getCharacter("susie_lw")
+        cutscene:walkTo(kris,"kris")
+        cutscene:walkTo(susie,"susie")
+        cutscene:setSpeaker(susie)
+        cutscene:text("* Okay, so.")
+        cutscene:text("* The reason I brought you here...")
+        cutscene:wait(0.25)
+        Assets.playSound("impact")
+        cutscene:panTo("windowcam",0.125)
+        cutscene:shakeCamera()
+        cutscene:text("* IS THAT!",{top=false})
         cutscene:mapTransition("aprthall1")
     end,
     ---@param cutscene WorldCutscene

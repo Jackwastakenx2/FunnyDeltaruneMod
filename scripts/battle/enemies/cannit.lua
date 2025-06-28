@@ -40,7 +40,8 @@ function Cannit:onAct(char,act)
         self.dialogue_override = "thanks, i guess."
         return {"You polished the Cannit!"}
     elseif act=="Standard" then
-        if char.id == "growlie" then
+        local charid = char.chara.id
+        if charid == "growlie" then
             self:addMercy(30)
             self.dialogue_override = "i'm used to it..."
             return "* Growlie ignored Cannit!"

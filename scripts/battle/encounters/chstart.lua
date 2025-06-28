@@ -7,6 +7,5 @@ function Cans:init()
     self.background = true
     self:addEnemy("cannit")
     self:addEnemy("cannit")
-    self:addEnemy("dummy")
 end
 return Cans

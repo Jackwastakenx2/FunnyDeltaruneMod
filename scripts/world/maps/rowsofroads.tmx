@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="32">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="36">
  <editorsettings>
   <export target="rowsofroads.lua" format="lua"/>
  </editorsettings>
  <tileset firstgid="1" source="../tilesets/HometownExterior.tsx"/>
  <tileset firstgid="169" source="../tilesets/test_battleborder.tsx"/>
+ <tileset firstgid="184" source="../../../libraries/hometown_library-main/scripts/world/tilesets/hometownobjects.tsx"/>
  <layer id="1" name="Tile Layer 1" width="16" height="12">
   <data encoding="csv">
 59,59,59,59,50,21,59,59,59,21,50,59,59,59,59,59,
@@ -94,6 +95,10 @@
    </properties>
   </object>
   <object id="30" name="outline" x="395.927" y="99.7603" width="160" height="200" rotation="18.5298"/>
+  <object id="33" gid="250" x="160" y="160" width="62" height="72"/>
+  <object id="35" name="spill" x="191.5" y="138.5">
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="7" name="battleareas">
   <object id="31" x="80" y="120" width="120" height="200"/>

@@ -17,7 +17,7 @@
     "chapter": 5,
 
     // The map that you start in when first starting the mod.
-    "map": "room1",
+    "map": "fileselect",
 
     // The party. The first character is the player.
     "party": ["kris"],
@@ -47,7 +47,7 @@
     // Should never be true, but just in case. Restarts the entire engine when leaving the mod.
     // If you need this, you're most likely doing something wrong.
     "hardReset": false,
-
+    "useSaves": false,
     // Whether the mod is hidden from the mod selection.
     "hidden": false,
 
@@ -64,6 +64,11 @@
             // Stat increases after defeating an enemy with violence
             "growStronger": false,
             // End of config
+        },
+        "afilemenu": {
+            "chapter": 5,
+            "map": "room1",
+            "previousChapter": 4
         }
     }
 }
