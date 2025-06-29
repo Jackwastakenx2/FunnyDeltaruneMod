@@ -36,15 +36,20 @@ function Cannit:onAct(char,act)
         Game.battle:startActCutscene("cannit.growlieClean")
         return --"test"
     elseif act=="Clean" then
-        self:addMercy(50)
+        self:addMercy(25)
         self.dialogue_override = "thanks, i guess."
-        return {"You polished the Cannit!"}
+        return "* You polished the Cannit!"
     elseif act=="Standard" then
         local charid = char.chara.id
         if charid == "growlie" then
             self:addMercy(30)
             self.dialogue_override = "i'm used to it..."
             return "* Growlie ignored Cannit!"
+        end
+        if charid == "susie" then
+            self:addMercy(5)
+            self.dialogue_override = "...you're welcome."
+            return "* Susie took a sip from Cannit!"
         end
     end
     return super.onAct(self,char,act)

@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 10,
+  nextobjectid = 12,
   properties = {},
   tilesets = {
     {
@@ -235,6 +235,21 @@ return {
           properties = {
             ["map"] = "darkseastart/sliditude",
             ["marker"] = "out"
+          }
+        },
+        {
+          id = 11,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 120,
+          y = 120,
+          width = 40,
+          height = 240,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "darkseaintro.fight1"
           }
         }
       }

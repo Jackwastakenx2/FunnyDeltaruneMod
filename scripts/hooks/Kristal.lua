@@ -1,16 +1,19 @@
 local kristal, super = Utils.hookScript(Kristal)
     --hooking into the loadscript to load DELTARUNE files if we want completion data :33
+    --this is distinctly a *bad* way to do it but idrc tbh
     function kristal.loadData(file,path)
         local matched = file:match("completion_(%d)")
         if matched then
-            local DeltFile = DeltaruneLoader.getCompletion(2,matched)
+            local DeltFile = DeltaruneLoader.getCompletion(4,matched)
             local KrisFile = {}
             local Crossovers = {"room_name","money","name"}
-            local Valuetoflag = {"eggs","shadow_crystals"}
+            local Valuetoflag = {"eggs","shadow_crystals","vessel_name"}
             if DeltFile then
                 for i,v in ipairs(Crossovers) do
                     KrisFile[v]=DeltFile[v]
                 end
+                KrisFile.room_name = "Kris's Room?"
+                KrisFile.room_name = KrisFile.room_name.." [CHAPTER 4 END]"
                 KrisFile.flags = {}
                 for i,v in ipairs(Valuetoflag) do
                     KrisFile.flags[v] = DeltFile[v]
@@ -76,6 +79,28 @@ local kristal, super = Utils.hookScript(Kristal)
                         end
                     end
                 end
+                local pdata = {}
+                if DeltFile.equipment then
+                    for i,v in pairs(DeltFile.equipment) do
+                        pdata[i] = {
+                            equipped={
+                                weapon={
+                                    flags={},
+                                    id=v.weapon
+                                },
+                                armor={}
+                            }
+                        }
+                        for j,k in ipairs(v.armor) do
+                            pdata[i].equipped.armor[j] = {
+                                flags={},
+                                id=k
+                            }
+                        end
+
+                    end
+                end
+                KrisFile.party_data=pdata
                 KrisFile.inventory = Krinventory
             end
             KrisFile.room_id = "room1"

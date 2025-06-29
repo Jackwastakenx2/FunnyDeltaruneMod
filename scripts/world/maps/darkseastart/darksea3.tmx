@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="11">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="12">
  <editorsettings>
   <export target="cliffsfight.lua" format="lua"/>
  </editorsettings>
@@ -53,9 +53,9 @@
     <property name="marker" value="out"/>
    </properties>
   </object>
-  <object id="10" name="script" x="40" y="240">
+  <object id="11" name="script" x="120" y="120" width="40" height="240">
    <properties>
-    <property name="cutscene" value=""/>
+    <property name="cutscene" value="darkseaintro.fight1"/>
    </properties>
   </object>
  </objectgroup>
